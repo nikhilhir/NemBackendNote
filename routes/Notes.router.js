@@ -26,7 +26,7 @@ NotesRouter.post("/create",async(req,res)=>{
           await createNote.save()
           res.status(201).send({"msg":"notes created"})
         } catch (error) {
-            console.log({"msg":"fail to create notes" , "err":error})
+            console.log({"ms":"fail to create notes" , "err":error})
         }
 })
 
