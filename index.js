@@ -14,9 +14,7 @@ const authentication = require("./middlewares/authentication.js");
 
 const app =express()
 app.use(express.json())
-app.use(cors({
-    origin:"*"
-}))
+app.use(cors({origin:"*"}))
 
 app.get("/",(req,res)=>{
     res.send("welcome page")
@@ -72,7 +70,7 @@ app.listen(PORT,async()=>{
 // })
 
 //find() //return obj under arr
-//findOne()//return only that obkect
+//findOne()//return only that object
 
 
 //this all are restricted route 
